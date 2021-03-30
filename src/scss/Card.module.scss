@@ -1,0 +1,36 @@
+.card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-around;
+    width: calc(min(340px, 90%));
+    min-height: 240px;
+    border-radius: 10px;
+    border-top: 4px solid;
+    box-shadow: 0px 10px 20px 1px hsl(229, 6%, 66%);
+    padding: 10% 10% 5% 10%;
+    background-color: hsl(0, 0%, 98%);
+    &__title {
+        font-size: 1.3rem;
+        margin: 0;
+    }
+    &__text {
+        font-size: 0.8rem;
+        margin: 0;   
+        color: hsl(229, 6%, 66%);   
+        line-height: 1.5rem;
+    }
+    &__image {
+        width: 60px;
+        align-self: flex-end;
+        margin-top: auto;
+    }
+}
+
+
+
+@media screen and (min-width: 1150px) {
+    .card {
+        width: 340px;
+    }
+}

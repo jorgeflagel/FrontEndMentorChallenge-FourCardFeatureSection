@@ -1,0 +1,43 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2% 5%;
+  background-color: #fafafa; }
+
+.App-header {
+  text-align: center;
+  margin-bottom: 60px; }
+  .App-header h1 {
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: #4c4e61; }
+    .App-header h1 span {
+      font-weight: 600;
+      display: block; }
+  .App-header p {
+    max-width: 55ch;
+    color: #a3a5ae; }
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px; }
+
+@media screen and (min-width: 1150px) {
+  .App-header h1 {
+    font-size: 2rem; }
+  .cards-container {
+    width: 1100px;
+    justify-items: center;
+    display: grid;
+    grid-template-areas: ". b ." "a b c" "a d c" ". d ."; }
+    .cards-container > div:nth-child(1) {
+      grid-area: a; }
+    .cards-container > div:nth-child(2) {
+      grid-area: b; }
+    .cards-container > div:nth-child(3) {
+      grid-area: c; }
+    .cards-container > div:nth-child(4) {
+      grid-area: d; } }
