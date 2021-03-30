@@ -7,7 +7,7 @@ function Card (props) {
         <div className={styles.card} key={props.id} style={{borderColor: props.color}}>
             <h2 className={styles.card__title} >{ props.title }</h2>
             <p className={styles.card__text}>{ props.text }</p>
-            <img className={styles.card__image} src={ props.image}/>
+            <img className={styles.card__image} src={ props.image} alt=""/>
         </div>
     );
 }
